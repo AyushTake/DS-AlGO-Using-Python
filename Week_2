@@ -1,0 +1,10 @@
+'''Write a function repfree(s) that takes as input a string s and checks whether any character appears more than once. The function should return True if there are no repetitions and False otherwise.
+
+Here are some examples to show how your function should work.'''
+
+def repfree(st):
+    for i in range(0,len(st)-1):
+        for j in range(i+1,len(st)):
+            if st[i]==st[j]:
+                return False
+    return True
