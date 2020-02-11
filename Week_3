@@ -1,0 +1,18 @@
+def remdup(l):
+  fl=[]
+  for i in l:
+    if i not in fl:
+      fl.append(i)
+  return fl
+
+def sumsquare(l):
+  esum=osum=0
+  ls=[]
+  for i in l:
+    if i%2==0:
+      esum=esum+i*i
+    else:
+      osum=osum+i*i
+  ls.append(osum)
+  ls.append(esum)
+  return ls	
